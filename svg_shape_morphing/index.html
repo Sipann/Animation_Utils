@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    svg {
+      width: 400px;
+      height: 400px;
+    }
+
+    path {
+      stroke: black;
+      stroke-width: 2px;
+      fill: none;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 100 100">
+    <defs>
+      <path id="p1" d="M 10,30 A 20,20 0 0 1 50 30 A 20,20 0 0 1 90 30 Q 90,60 50 90 Q 10 60 10 30 z" />
+      <path id="p2" d="M 80 50 A 30,30 0 0 1 20 50 A 30,30 0 0 1 80 50" />
+    </defs>
+
+
+
+    <path id="animated" >
+      <animate
+        attributeName="d"
+        dur="4s"
+        fill="freeze" />
+    </path>
+    
+  </svg>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+  <script src="utils.js"></script>
+  <script src="cleanpath.js"></script>
+  <script src="getangles.js"></script>
+  <script src="projection.js"></script>
+  <script src="position.js"></script>
+  <script src="splitcurve.js"></script>
+  <script src="fitshortpath.js"></script>
+  <script src="drawpath.js"></script>
+  <script src="getpaths.js"></script>
+
+</body>
+</html>
